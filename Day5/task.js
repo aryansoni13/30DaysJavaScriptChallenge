@@ -69,3 +69,21 @@ console.log(greet("Aryan", 22));
 
 //! Task 9 
 
+const repeatFunction = (fn, times) => {
+    for (let i = 0; i < times; i++) {
+        fn();
+    }
+};
+
+const sayHello = () => console.log("Hello!");
+repeatFunction(sayHello, 3);
+
+//! Task 10
+
+const applyFunctions = (fn1, fn2, value) => fn2(fn1(value));
+
+const addOne = x => x + 1;
+const square = x => x * x;
+
+const result = applyFunctions(addOne, square, 2);
+console.log(result);
