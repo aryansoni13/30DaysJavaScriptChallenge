@@ -50,6 +50,22 @@ console.log(sum(4, 6))
 //! Task 6
 
 const containsCharacter = (str, char) => str.includes(char);
-
-console.log(containsCharacter("hello", "e")); 
+console.log(containsCharacter("hello", "e"));
 console.log(containsCharacter("world", "a"));
+
+//! Task 7 
+
+function mult(numb1, numb2) {
+    return numb1 * numb2
+}
+console.log(mult(2, 3));
+
+//! Task 8 
+
+function greet(name, age = 25) {
+    return `Hello, ${name}! You are ${age} years old.`;
+}
+console.log(greet("Aryan", 22)); 
+
+//! Task 9 
+
