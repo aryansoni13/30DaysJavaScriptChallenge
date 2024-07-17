@@ -5,3 +5,4 @@ function number(num){
         console.log("Odd");
     }
 }
+
