@@ -38,11 +38,18 @@ function concat2(str2) {
     return str2
 }
 
-console.log(concat1 ("Hello ") +concat2("World"));
+console.log(concat1("Hello ") + concat2("World"));
 
 //! Task 5 
 
-let sum = (x,y) => {
-    return x+y
+let sum = (x, y) => {
+    return x + y
 }
-console.log(sum(4,6))
+console.log(sum(4, 6))
+
+//! Task 6
+
+const containsCharacter = (str, char) => str.includes(char);
+
+console.log(containsCharacter("hello", "e")); 
+console.log(containsCharacter("world", "a"));
