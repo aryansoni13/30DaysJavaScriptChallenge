@@ -1,32 +1,32 @@
-// //! Task 1
+//! Task 1
 
-// let arr = Array(1, 2, 3, 4, 5)
-// console.log(arr); //* output: [1,2,3,4,5]
+let arr = Array(1, 2, 3, 4, 5)
+console.log(arr); //* output: [1,2,3,4,5]
 
-// //! Task 2 
+//! Task 2 
 
-// console.log(arr[0]); //* Output: 1
-// console.log(arr[4]); //* Output: 5
+console.log(arr[0]); //* Output: 1
+console.log(arr[4]); //* Output: 5
 
-// //! Task 3 
+//! Task 3 
 
-// arr.push(6);
-// console.log(arr); //* Output: [1,2,3,4,5,6]
+arr.push(6);
+console.log(arr); //* Output: [1,2,3,4,5,6]
 
-// //! Task 4
+//! Task 4
 
-// arr.pop();
-// console.log(arr); //* Output: [1,2,3,4,5]
+arr.pop();
+console.log(arr); //* Output: [1,2,3,4,5]
 
-// //! Task 5 
+//! Task 5 
 
-// arr.shift(7);
-// console.log(arr); //* Output: [2,3,4,5]
+arr.shift(7);
+console.log(arr); //* Output: [2,3,4,5]
 
-// //! Task 6 
+//! Task 6 
 
-// arr.unshift(6);
-// console.log(arr); //* Output: [6,2,3,4,5]
+arr.unshift(6);
+console.log(arr); //* Output: [6,2,3,4,5]
 
 //! Task 7
 
@@ -50,13 +50,13 @@ const num = [1, 2, 3, 4, 5, 6]
 
 console.log("Using For loop");
 for (let i = 0; i < num.length; i++) {
-    console.log(num[i]);
+    console.log(num[i]); //* Output: 1 2 3 4 5 6
 }
 
 //! Task 11 
 
 console.log("Using forEach method");
-num.forEach(num => console.log(num));
+num.forEach(num => console.log(num)); //* Output: 1 2 3 4 5 6
 
 //! Task 12
 
@@ -66,8 +66,8 @@ const matrix = [
     [7, 8, 9]
 ];
 
-console.log(matrix);
+console.log(matrix); //* Output: Prints this 2D matrix 
 
 //! Task 13 
 
-console.log(matrix[1][2]);
+console.log(matrix[1][2]); //* Output: 6
