@@ -14,7 +14,7 @@
 // console.log(arr); //* Output: [1,2,3,4,5,6]
 
 // //! Task 4
- 
+
 // arr.pop();
 // console.log(arr); //* Output: [1,2,3,4,5]
 
@@ -46,3 +46,28 @@ console.log(sumOfNumbers); //* Output: 15
 
 //! Task 10 
 
+const num = [1, 2, 3, 4, 5, 6]
+
+console.log("Using For loop");
+for (let i = 0; i < num.length; i++) {
+    console.log(num[i]);
+}
+
+//! Task 11 
+
+console.log("Using forEach method");
+num.forEach(num => console.log(num));
+
+//! Task 12
+
+const matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+console.log(matrix);
+
+//! Task 13 
+
+console.log(matrix[1][2]);
