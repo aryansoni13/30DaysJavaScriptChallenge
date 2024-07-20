@@ -58,7 +58,7 @@ let age1 = 22;
 
 let person = {
     name,
-    age,
+    age1,
     greet() {
         console.log(`Hello, my name is ${this.name} and I am ${this.age1} years old.`);
     }
