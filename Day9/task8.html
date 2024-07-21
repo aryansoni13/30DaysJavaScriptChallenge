@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+    <style>
+        .highlight {
+          background-color: yellow;
+        }
+      </style>
+</head>
+<body>
+    <div id="myDiv">Hello</div>
+  <script>
+    let div = document.getElementById("myDiv");
+    div.classList.add("highlight");
+    setTimeout(() => {
+      div.classList.remove("highlight");
+    }, 2000);
+  </script>
+</body>
+</html>
