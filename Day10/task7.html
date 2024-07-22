@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+</head>
+
+<body>
+    <form id="myForm">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            formData.forEach((value, key) => {
+                console.log(`${key}: ${value}`);
+            });
+        });
+
+    </script>
+</body>
+
+</html>

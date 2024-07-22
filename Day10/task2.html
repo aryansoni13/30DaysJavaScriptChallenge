@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+
+<body>
+    <img id="toggleImage" src=".\pexels-pixabay-206359.jpg" alt="Image" style="display:block;">
+
+    <script>
+        document.getElementById('toggleImage').addEventListener('dblclick', function () {
+            const img = document.getElementById('toggleImage');
+            img.style.display = (img.style.display === 'none') ? 'block' : 'none';
+        });
+
+    </script>
+</body>
+
+</html>
