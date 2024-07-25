@@ -79,7 +79,7 @@ const asyncFunction2 = async () => {
 
 asyncFunction2();
 
-//! Tasl 6
+//! Task 6
 
 fetch("https://jsonplaceholder.typicode.com/posts/1")
   .then((response) => response.json())
