@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SessionStorage Form</title>
+</head>
+
+<body>
+    <form id="sessionForm">
+        <label for="sessionName">Name:</label>
+        <input type="text" id="sessionName" required><br>
+        <label for="sessionEmail">Email:</label>
+        <input type="email" id="sessionEmail" required><br>
+        <button type="submit">Save</button>
+    </form>
+    <div id="sessionData"></div>
+
+    <script>
+        document.getElementById('sessionForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('sessionName').value;
+            const email = document.getElementById('sessionEmail').value;
+            const sessionData = { name, email };
+            sessionStorage.setItem('sessionData', JSON.stringify(sessionData));
+            displaySessionData();
+        });
+
+        function displaySessionData() {
+            const savedSessionData = JSON.parse(sessionStorage.getItem('sessionData'));
+            if (savedSessionData) {
+                document.getElementById('sessionData').innerText = `Name: ${savedSessionData.name}, Email: ${savedSessionData.email}`;
+            }
+        }
+
+        window.onload = displaySessionData;
+    </script>
+</body>
+
+</html>
