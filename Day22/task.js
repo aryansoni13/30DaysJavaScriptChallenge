@@ -41,7 +41,6 @@ console.log(lengthOfLongestSubstring("abcabcbb")); //* OUTPUT: 3
 console.log(lengthOfLongestSubstring("bbbbb")); //* OUTPUT: 1
 console.log(lengthOfLongestSubstring("")); //* OUTPUT: 0
 
-
 //! Task 3
 
 function maxArea(height) {
